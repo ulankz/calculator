@@ -58,8 +58,8 @@
 			children = (
 				F358D4331FA87A6C002A9E5A /* Utill */,
 				F358D4321FA874AA002A9E5A /* Supporting Files */,
-				F358D4221FA873D7002A9E5A /* ViewController.swift */,
-				F358D4241FA873D7002A9E5A /* Main.storyboard */,
+				F358D4361FA8908A002A9E5A /* Controller */,
+				F358D4371FA89098002A9E5A /* View */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -81,6 +81,22 @@
 				F358D4341FA87A8C002A9E5A /* RoundButton.swift */,
 			);
 			name = Utill;
+			sourceTree = "<group>";
+		};
+		F358D4361FA8908A002A9E5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F358D4221FA873D7002A9E5A /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F358D4371FA89098002A9E5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F358D4241FA873D7002A9E5A /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
