@@ -13,6 +13,7 @@
 		F358D4281FA873D7002A9E5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F358D4271FA873D7002A9E5A /* Assets.xcassets */; };
 		F358D42B1FA873D7002A9E5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358D4291FA873D7002A9E5A /* LaunchScreen.storyboard */; };
 		F358D4351FA87A8C002A9E5A /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358D4341FA87A8C002A9E5A /* RoundButton.swift */; };
+		F3B3FC791FA9E07B00E45086 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B3FC781FA9E07B00E45086 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F358D42A1FA873D7002A9E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F358D42C1FA873D7002A9E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F358D4341FA87A8C002A9E5A /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F3B3FC781FA9E07B00E45086 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		F358D41F1FA873D7002A9E5A /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				F3B3FC771FA9E06600E45086 /* Model */,
 				F358D4331FA87A6C002A9E5A /* Utill */,
 				F358D4321FA874AA002A9E5A /* Supporting Files */,
 				F358D4361FA8908A002A9E5A /* Controller */,
@@ -97,6 +100,14 @@
 				F358D4241FA873D7002A9E5A /* Main.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F3B3FC771FA9E06600E45086 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3B3FC781FA9E07B00E45086 /* CalculatorBrain.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +185,7 @@
 			files = (
 				F358D4351FA87A8C002A9E5A /* RoundButton.swift in Sources */,
 				F358D4231FA873D7002A9E5A /* ViewController.swift in Sources */,
+				F3B3FC791FA9E07B00E45086 /* CalculatorBrain.swift in Sources */,
 				F358D4211FA873D7002A9E5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +350,7 @@
 				F358D4311FA873D7002A9E5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
