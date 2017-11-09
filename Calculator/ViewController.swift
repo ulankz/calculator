@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var userIsInTheMiddleOfTyping = false
-    
+    private var brain = CalculatorBrain()
     @IBOutlet weak var output: UITextView!
     @IBAction func touchDigit(_ sender : UIButton){
         let digit = sender.currentTitle!
@@ -27,21 +27,7 @@ class ViewController: UIViewController {
     @IBAction func clear(_ sender : UIButton){
         output!.text.removeAll();
     }
-    func distance(from startX:Int, to endX:Int,using color:CGColor) -> Int{
-        return endX - startX;
-    }
-    @IBAction func signChange(_ sender : UIButton){
-        
-        if let text = output.text,
-            !text.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty {
-            if let digit = Int(text){
-                output.text = String(digit * (-1))
-            }
-            else{
-                output.text = "0";
-            }
-        }
-    }
+
     var displayValue : Double {
         get{
             return Double(output.text)!
@@ -50,8 +36,6 @@ class ViewController: UIViewController {
             output.text = String(newValue)
         }
     }
-    private var brain = CalculatorBrain()
-    
        @IBAction func performOperation(_ sender : UIButton){
         if userIsInTheMiddleOfTyping{
             brain.setOperand(displayValue)
