@@ -39,6 +39,7 @@ struct CalculatorBrain {
         "+" : Operation.binaryOperation({ $0 + $1}),
         "-" : Operation.binaryOperation({ $0 - $1}),
         "=" : Operation.equals
+        
     ]
     mutating func performOperation(_ symbol : String){
         if let operation = operations[symbol]{
@@ -48,6 +49,7 @@ struct CalculatorBrain {
             case .unaryOperation(let function):
                 if accumulator != nil{
                     accumulator = function(accumulator!)
+                    accumulator = nil
                 }
             case .binaryOperation(let function):
                 if accumulator != nil{

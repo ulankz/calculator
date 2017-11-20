@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     @IBAction func clear(_ sender : UIButton){
         output!.text.removeAll();
     }
-
     var displayValue : Double {
         get{
             return Double(output.text)!
@@ -49,4 +48,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
